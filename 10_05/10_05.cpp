@@ -8,13 +8,19 @@
 
 int main()
 {
-	float arr1[] = { 1, 2, 3 };
-	float arr2[] = { 4, 5, 6 };
-	float arr3[3];
+	float arr1[10000];
+	float arr2[10000];
+	float arr3[10000];
+
+	for (int i = 0; i < 10000; i++)
+	{
+		arr1[i] = i;
+		arr2[i] = i;
+	}
 
 	addArrays(arr1, arr2, arr3);
 
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < 10000; i++)
 	{
 		std::cout << arr3[i] << std::endl;
 	}
