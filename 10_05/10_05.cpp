@@ -22,7 +22,7 @@ int main()
 
 	for (int i = 0; i < 10000; i++)
 	{
-		std::cout << arr3[i] << std::endl;
+		std::cout << arr3[i] << " ";
 	}
 	system("pause");
     return 0;
